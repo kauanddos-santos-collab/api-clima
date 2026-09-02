@@ -1,0 +1,89 @@
+/* Configuração geral para centralizar o conteúdo no meio da tela */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Cria um fundo degradê suave misturando azul e branco */
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Coloca o título e a área de pesquisa lado a lado */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    gap: 30px; /* Espaço entre o título e a barra de pesquisa */
+}
+
+/* Caixa com fundo azul escuro em volta da frase "Consulta de clima" */
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff; /* Texto branco para dar contraste com o fundo escuro */
+    background-color: #0f172a; /* Azul escuro (Navy/Slate) */
+    padding: 12px 25px; /* Espaçamento interno para criar a "caixa" */
+    border-radius: 8px; /* Cantos arredondados na caixa */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Sombra leve para dar destaque */
+}
+
+/* Neutraliza a tag <center> antiga do HTML */
+h1 center {
+    display: inline;
+}
+
+/* Bloco completo da pesquisa */
+.pesquisa {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+
+/* Força o input e o botão a ficarem lado a lado na mesma linha */
+.pesquisa input, 
+.pesquisa button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Estilização da caixa de texto (Input) */
+#cidade {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px 0 0 6px; /* Arredonda apenas o lado esquerdo */
+    outline: none;
+    width: 220px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+/* Mudança visual quando o usuário clica para digitar */
+#cidade:focus {
+    border-color: #0284c7; /* Borda azul ao focar */
+}
+
+/* Estilização do Botão Buscar (Fixado ao lado do Input) */
+#buscar {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #0284c7; /* Azul combinando com o tema */
+    color: white;
+    border: 1px solid #0284c7;
+    border-radius: 0 6px 6px 0; /* Arredonda apenas o lado direito */
+    cursor: pointer;
+    margin-left: -1px; /* Junta perfeitamente as bordas */
+    box-sizing: border-box;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+#buscar:hover {
+    background-color: #0369a1; /* Azul ligeiramente mais escuro no hover */
+    border-color: #0369a1;
+}
+
+/* Texto de instrução que fica logo abaixo da barra */
+#mensagem {
+    margin: 2px 0 0 5px;
+    font-size: 14px;
+    color: #475569; /* Tom de cinza azulado para harmonizar */
+    font-weight: 500;
+}
