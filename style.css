@@ -63,11 +63,11 @@ h1 center {
 /* Estilização do Botão Buscar (Fixado ao lado do Input) */
 #buscar {
     padding: 12px 20px;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #0284c7; /* Azul combinando com o tema */
     color: white;
     border: 1px solid #0284c7;
-    border-radius: 0 6px 6px 0; /* Arredonda apenas o lado direito */
+    border-radius: 0 12px 6px 0; /* Arredonda apenas o lado direito */
     cursor: pointer;
     margin-left: -1px; /* Junta perfeitamente as bordas */
     box-sizing: border-box;
@@ -86,4 +86,38 @@ h1 center {
     font-size: 14px;
     color: #475569; /* Tom de cinza azulado para harmonizar */
     font-weight: 500;
+}
+/* Estilo de base: pensado para telas pequenas(celulares)*/ ,container { 
+width: 100%;
+padding: 20px;
+box-sizing: border-box;
+
+}
+/*a partir de 600px pra cima de largura, aproveita mais espaço pra tela */
+@media (min-width: 600px) { }
+.container {
+max-width: 480px;
+margin: 0 auto;
+padding: 32px;
+
+}
+input {
+ width: 70%;   
+}
+button { 
+width: 28%;
+}
+input, button { 
+
+min-width: 44px; 
+font-size: 16px; 
+padding: 10px 14px;
+
+}
+button{ 
+margin-top: 8px; 
+
+
+
+
 }
