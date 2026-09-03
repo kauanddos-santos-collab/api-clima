@@ -4,33 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clima</title>
+
+    <title>Consulta de Clima</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- meu titulo -->
-    <h1><center>Consulta de clima</center></h1>
+    <h1>Consulta de Clima</h1>
 
-    <!-- aqui é para o usuario por o texto dentro da caixa de "digite uma cidade" -->
     <div class="pesquisa">
 
         <input
             type="text"
             id="cidade"
-            aria-placeholder="digite uma cidade"
+            placeholder="Digite uma cidade"
         >
 
-        <!-- aqui é o botão buscar -->
         <button id="buscar">Buscar</button>
 
-        <!-- aqui é o texto abaixo da barra de pesquisa -->
-        <p id="mensagem">Digite sua cidade para consultar</p>
+        <p id="mensagem">
+            Digite sua cidade para consultar
+        </p>
+
+        <!-- Onde o resultado do clima será mostrado -->
+        <div id="resultado"></div>
 
     </div>
 
+    <script src="script.js"></script>
+
 </body>
 
-</html>    
+</html>
