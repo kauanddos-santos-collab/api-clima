@@ -67,7 +67,7 @@ h1 center {
     background-color: #0284c7; /* Azul combinando com o tema */
     color: white;
     border: 1px solid #0284c7;
-    border-radius: 0 12px 6px 0; /* Arredonda apenas o lado direito */
+    border-radius: 0 6px 6px 0; /* Arredonda apenas o lado direito */
     cursor: pointer;
     margin-left: -1px; /* Junta perfeitamente as bordas */
     box-sizing: border-box;
