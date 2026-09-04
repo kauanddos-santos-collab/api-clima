@@ -1,0 +1,30 @@
+{ 
+
+"name": "Consulta do Clima", 
+"short_name": "Clima",
+"Start_url": "index.html",
+"display": "standalone", 
+"background_color": "#ffffff", 
+"theme_color": "#1f5c99",
+"icons":
+}
+
+{
+
+"src": "icons/clima.png", 
+"sizes": "192x192", 
+"type": "image/png"
+}
+{
+"src": "icons/clima.png", 
+ "sizes":    "512x512", 
+ "type": "image/png"  
+
+
+
+
+
+
+
+
+}
